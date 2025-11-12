@@ -4,6 +4,8 @@ export function initApp() {
     renderServices();
 }
 
+
+
 function renderServices() {
     const container = document.querySelector('#services');
     if (!container) return;

@@ -40,6 +40,7 @@ body {
     z-index: 1000;
     display: block;
     transform: translateX(100%);
+
 }
 
 .sidebar_menu .menu_buttons_sd {
@@ -78,21 +79,58 @@ body {
 }
 
 .acc_sd {
-
-    display: none;
-    height: 200px;
-    width: 80%;
-    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    opacity: 0;
+    max-height: 0;
+    width: 85%;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
+    transition: 0.5s;
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid white;
+}
+
+.acc_sd>a {
     padding: 15px;
-    transition: 1s;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+
+
 }
 
 .acc_sd.active {
+    opacity: 1;
+    max-height: 500px;
 
-    transition: 1s;
-    display: block;
+
+
+    padding: 10px 0 20px 0;
+}
+
+.acc_sd.active>a {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.acc_sd>a:first-child {
+    border-radius: 30px 30px 0 0;
+}
+
+.acc_sd>a:last-child {
+    border-radius: 0 0 30px 30px;
 }
 
 .menu-toggle.active span:nth-child(1) {
@@ -959,10 +997,11 @@ nav.scrolled+main {
         margin-top: 20px;
     }
 
+
     .description_block_3 {
         max-width: 40em;
         height: 30%;
-        bottom: -30px;
+        bottom: -60px;
     }
 
     .description_block_3 p {

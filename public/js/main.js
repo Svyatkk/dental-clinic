@@ -114,57 +114,18 @@ menu_toggle.addEventListener('click', () => {
     menu_toggle.classList.toggle('active')
 })
 
-const slider = document.querySelector(".specialists_slider");
-let items = slider.querySelectorAll("ul li");
-let current = 1;
-let isAnimating = false;
+let localMenu = document.querySelectorAll('.menu_buttons_sd acc_sd')
 
-function update(direction = 0) {
-    if (isAnimating) return;
-    isAnimating = true;
+let alla = document.querySelectorAll('.menu_buttons_sd >a')
 
-    items.forEach((item, i) => {
-        item.style.transition = "transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.8s ease";
 
-        const diff = (i - current + items.length) % items.length;
-
-        if (i === current) {
-            item.style.transform = "translateX(0px) scale(1)";
-            item.style.opacity = "1";
-        } else if (diff === 1 || diff === items.length - 1) {
-            const offset = diff === 1 ? 220 : -220;
-            item.style.transform = `translateX(${offset}px) scale(0.7)`;
-            item.style.opacity = "0.8";
-        } else {
-            const baseOffset = direction === 1 ? 500 : -500;
-            const distance = Math.min(Math.abs(diff), 3);
-            const offset = diff > items.length / 2 ? -baseOffset * distance : baseOffset * distance;
-
-            item.style.transform = `translateX(${offset}px) scale(0.4)`;
-            item.style.opacity = "0";
-        }
-    });
-
-    setTimeout(() => {
-        isAnimating = false;
-    }, 800);
-}
-
-document.querySelector(".prev").onclick = () => {
-    current = (current - 1 + items.length) % items.length;
-    update(-1);
-};
-
-document.querySelector(".next").onclick = () => {
-    current = (current + 1) % items.length;
-    update(1);
-};
-
-update();
-
-let but_1 = document.querySelector('.menu_buttons_sd a:first-child')
-let sd = document.querySelector('.acc_sd')
-
-but_1.addEventListener('click', () => {
-    sd.classList.toggle('active')
+alla.forEach(item => {
+    item.addEventListener('click', () => {
+        item.nextElementSibling.classList.toggle('active')
+    })
 })
+
+
+
+
+
