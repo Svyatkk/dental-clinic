@@ -40,6 +40,8 @@ body {
     z-index: 1000;
     display: block;
     transform: translateX(100%);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 
 }
 
@@ -47,12 +49,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    min-height: 100%;
     margin-top: 100px;
+    padding-bottom: 100px;
+
 }
 
 
-.sidebar_menu .menu_buttons_sd>a {
+.sidebar_menu .menu_buttons_sd>a:not(.calling_block_sd) {
     color: white !important;
     width: 90%;
     height: 100px !important;
@@ -61,17 +65,17 @@ body {
 
 }
 
-.sidebar_menu .calling_block {
+.sidebar_menu .calling_block_sd {
     margin-top: 30px;
-    width: 100%;
-    height: 50px;
+    width: 90%;
     border: 2px solid #7b7777;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 400px;
-
-
+    max-width: 200px;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
 }
 
 .sidebar_menu .calling_block p {
@@ -93,9 +97,11 @@ body {
     overflow: hidden;
     padding: 0;
     border: 1px solid white;
+    box-sizing: border-box;
+
 }
 
-.acc_sd>a {
+.acc_sd>a:not(.calling_block) {
     padding: 15px;
     border-radius: 10px;
     background-color: #333;
@@ -108,15 +114,13 @@ body {
     opacity: 0;
     transition: all 0.5s ease-in-out;
 
+    box-sizing: border-box;
 
 }
 
 .acc_sd.active {
     opacity: 1;
     max-height: 500px;
-
-
-
     padding: 10px 0 20px 0;
 }
 
@@ -126,11 +130,11 @@ body {
 }
 
 .acc_sd>a:first-child {
-    border-radius: 30px 30px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 
 .acc_sd>a:last-child {
-    border-radius: 0 0 30px 30px;
+    border-radius: 0 0 10px 10px;
 }
 
 .menu-toggle.active span:nth-child(1) {
@@ -287,7 +291,6 @@ nav.scrolled {
     width: 11em;
     border: 2px solid #555;
     text-align: center;
-    height: 100%;
     border-radius: 10px;
     align-content: center;
     background-color: transparent;
@@ -881,10 +884,7 @@ nav.scrolled+main {
         text-align: center;
     }
 
-    .sidebar_menu .calling_block {
-        max-width: 300px;
-        height: 8% !important;
-    }
+
 
     .sidebar_menu a {
         font-size: 1em !important;
@@ -970,11 +970,8 @@ nav.scrolled+main {
         height: 18em;
     }
 
-    .sidebar_menu .menu_buttons_sd .calling_block {
-        max-width: 300px;
-        height: 8% !important;
 
-    }
+
 
     .sidebar_menu a {
         font-size: 1em;
@@ -1021,16 +1018,14 @@ nav.scrolled+main {
         height: 14em;
     }
 
-    .sidebar_menu .calling_block {
-        max-width: 300px;
-        height: 8% !important;
-    }
 
-    .sidebar_menu a {
+    .sidebar_menu a> {
         font-size: 0.9em !important;
         width: 70%;
-
     }
+
+
+
 }
 
 
