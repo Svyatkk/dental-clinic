@@ -96,7 +96,6 @@ body {
     transition: 0.5s;
     overflow: hidden;
     padding: 0;
-    border: 1px solid white;
     box-sizing: border-box;
 
 }

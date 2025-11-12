@@ -11,12 +11,13 @@ let observe = new IntersectionObserver(entries => {
     })
 })
 
-let a = document.querySelectorAll('a')
-
-a.forEach(element => {
-    element.addEventListener('click', (event) => {
-        event.preventDefault()
-    })
+document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function (e) {
+        if (this.href.includes('google.com/maps')) {
+            return;
+        }
+        e.preventDefault();
+    });
 });
 
 let blocks = document.querySelectorAll('.blocks_services>div')
@@ -113,6 +114,7 @@ menu_toggle.addEventListener('click', () => {
     document.body.classList.toggle('body_hide')
     menu_toggle.classList.toggle('active')
 })
+
 
 let localMenu = document.querySelectorAll('.menu_buttons_sd acc_sd')
 
