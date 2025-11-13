@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: auto;
+
 }
 
 .body_hide {
@@ -234,7 +235,7 @@ a {
 nav {
     display: flex;
     justify-content: center;
-    height: 80px;
+    height: 110px;
     align-items: center;
     background-color: #333;
     padding: 0 15px;
@@ -245,11 +246,10 @@ nav {
     width: 100%;
     z-index: 1000;
     transition: all 0.3s ease;
-
 }
 
 nav.scrolled {
-    height: 60px;
+    height: 90px;
     background-color: rgba(51, 51, 51, 0.95);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -260,22 +260,44 @@ nav.scrolled {
     font-size: 0.80em;
 }
 
+.logo_close_block_toggle {
+    height: 100px;
+    width: 240px !important;
+    background-color: #555;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.logo_close_block_toggle img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
 .logo {
     background-color: #555;
     height: 100%;
     width: 150px;
     border-radius: 10px;
-    flex-shrink: 0;
+    background-color: #555;
+    overflow: hidden;
+    cursor: pointer;
+
 
 }
+
+
+
 
 .navbar {
     display: flex;
     width: 100%;
     max-width: 1200px;
-    height: 40px;
+    height: 70px;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .menu_buttons {
@@ -296,6 +318,7 @@ nav.scrolled {
     position: relative;
     flex-shrink: 0;
     overflow: hidden;
+    height: calc(100% - 20px) !important;
 }
 
 .sidebar_menu a,
@@ -311,7 +334,9 @@ nav.scrolled {
     position: absolute;
     height: 2px;
     background-color: #555;
-    top: 100%;
+    top: 90%;
+
+
     transition: 0.5s;
 }
 
@@ -404,11 +429,8 @@ nav.scrolled+main {
     width: 40%;
     height: 100%;
     display: flex;
-
     align-items: center;
 }
-
-
 
 
 .block_wrapper_1>div:first-child {
@@ -488,10 +510,8 @@ nav.scrolled+main {
     width: 30em;
     height: 100%;
     padding: 15px;
-
-
-
 }
+
 
 .block_wrapper_2 .circle_gray {
     background-color: #7b7777;
@@ -780,6 +800,42 @@ nav.scrolled+main {
 }
 
 
+.close_block_toggle {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    transition: top 0.4s ease-in-out;
+}
+
+.close_block_toggle.show {
+    top: 0;
+}
+
+.close_block_toggle.hide {
+    top: -100%;
+    transition: top 0.8s ease-in-out;
+}
+
+.logo_close_block_toggle {
+    width: 120px;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 2s ease, transform 1s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.logo_close_block_toggle.appear {
+    opacity: 1;
+    transform: scale(1);
+}
+
 
 @media (max-width: 1180px) {
     .menu_buttons {
@@ -916,13 +972,26 @@ nav.scrolled+main {
     }
 
 
+    .text {
+        border: 1px solid black;
+        margin-top: 20px;
+    }
+
 }
 
 
 
+
+
+
 @media (max-width: 768px) {
+
+    .text {
+        margin-top: 0;
+    }
+
     nav {
-        height: 80px;
+        height: 120px;
     }
 
     .blocks_services h3:first-child {
@@ -944,7 +1013,7 @@ nav.scrolled+main {
     }
 
     .navbar {
-        height: 45px;
+        height: 60px;
     }
 
     .logo {
@@ -1017,13 +1086,10 @@ nav.scrolled+main {
         height: 14em;
     }
 
-
     .sidebar_menu a> {
         font-size: 0.9em !important;
         width: 70%;
     }
-
-
 
 }
 

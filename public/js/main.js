@@ -1,10 +1,33 @@
+let intro = document.querySelector('.close_block_toggle')
+let logo = document.querySelector('.logo_close_block_toggle')
+
+
+
+window.addEventListener('load', () => {
+
+
+
+    intro.classList.add('show');
+
+    setTimeout(() => {
+        logo.classList.add('appear');
+    }, 300);
+
+    setTimeout(() => {
+        intro.classList.add('hide');
+    }, 1300);
+
+});
+
+
+
+
 let navbar = document.querySelector('nav')
 
 let observe = new IntersectionObserver(entries => {
     entries.forEach(item => {
         if (item.isIntersecting) {
             item.target.classList.add('visible')
-
         }
 
 
@@ -115,7 +138,6 @@ menu_toggle.addEventListener('click', () => {
     menu_toggle.classList.toggle('active')
 })
 
-
 let localMenu = document.querySelectorAll('.menu_buttons_sd acc_sd')
 
 let alla = document.querySelectorAll('.menu_buttons_sd >a')
@@ -126,6 +148,9 @@ alla.forEach(item => {
         item.nextElementSibling.classList.toggle('active')
     })
 })
+
+
+
 
 
 
