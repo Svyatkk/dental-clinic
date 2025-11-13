@@ -14,6 +14,7 @@ async function startanimate() {
 
             setTimeout(() => {
                 intro.classList.add('hide');
+                intro.classList.remove('show');
 
                 resolve();
             }, 900);
@@ -23,11 +24,33 @@ async function startanimate() {
 
 async function init() {
     await startanimate()
+
+    listen()
     return observe.observe(main_block)
+
+
+
+}
+init()
+
+
+function listen() {
+    document.addEventListener("keydown", function (event) {
+
+
+        if (event.ctrlKey && event.key === "r") {
+
+
+            intro.classList.toggle('show');
+
+            setTimeout(() => {
+                intro.classList.add('hide');
+            }, 900);
+        }
+    });
+
 }
 
-
-init()
 
 let navbar = document.querySelector('nav')
 
