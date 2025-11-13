@@ -2,25 +2,30 @@ let intro = document.querySelector('.close_block_toggle')
 let logo = document.querySelector('.logo_close_block_toggle')
 
 
+async function startanimate() {
+    return new Promise((resolve) => {
+        window.addEventListener('load', () => {
+            intro.classList.add('show');
 
-window.addEventListener('load', () => {
+            setTimeout(() => {
+                logo.classList.add('appear');
+            }, 300);
 
+            setTimeout(() => {
+                intro.classList.add('hide');
 
+                resolve();
+            }, 1300);
+        });
+    });
+}
 
-    intro.classList.add('show');
+async function init() {
+    await startanimate()
+    return observe.observe(main_block)
+}
 
-    setTimeout(() => {
-        logo.classList.add('appear');
-    }, 300);
-
-    setTimeout(() => {
-        intro.classList.add('hide');
-    }, 1300);
-
-});
-
-
-
+init()
 
 let navbar = document.querySelector('nav')
 
@@ -42,7 +47,7 @@ document.querySelectorAll('a').forEach(link => {
         e.preventDefault();
     });
 });
-
+let main_block = document.querySelector('.main_block')
 let blocks = document.querySelectorAll('.blocks_services>div')
 
 blocks.forEach(item => {
@@ -50,7 +55,6 @@ blocks.forEach(item => {
 })
 
 observe.observe(document.querySelector('.blocks_services'))
-
 function handleScroll() {
     if (window.scrollY > 20) {
         navbar.classList.add('scrolled');

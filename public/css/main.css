@@ -1098,14 +1098,7 @@ nav.scrolled+main {
 }
 
 
-.block_wrapper_1 h1,
-.block_wrapper_1 p,
-.adress,
-.block_wrapper_2 {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 0.8s ease forwards;
-}
+
 
 
 
