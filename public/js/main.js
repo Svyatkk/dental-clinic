@@ -5,7 +5,8 @@ let logo = document.querySelector('.logo_close_block_toggle')
 async function startanimate() {
     return new Promise((resolve) => {
         window.addEventListener('load', () => {
-            intro.classList.add('show');
+
+
 
             setTimeout(() => {
                 logo.classList.add('appear');
@@ -15,7 +16,7 @@ async function startanimate() {
                 intro.classList.add('hide');
 
                 resolve();
-            }, 1000);
+            }, 900);
         });
     });
 }

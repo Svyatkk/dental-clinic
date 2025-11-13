@@ -807,7 +807,7 @@ nav.scrolled+main {
     width: 100%;
     height: 100%;
     position: fixed;
-    top: -100%;
+    top: 0;
     left: 0;
     background-color: #333;
     display: flex;
@@ -829,7 +829,7 @@ nav.scrolled+main {
 .logo_close_block_toggle {
     width: 120px;
     opacity: 0;
-    transform: scale(0.9);
+    transform: scale(0.6);
     transition: opacity 2s ease, transform 1s ease;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
