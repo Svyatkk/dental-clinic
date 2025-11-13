@@ -842,6 +842,10 @@ nav.scrolled+main {
         display: none;
     }
 
+    nav {
+        height: 90px;
+    }
+
     .blocks_services {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
@@ -986,12 +990,10 @@ nav.scrolled+main {
 
 @media (max-width: 768px) {
 
-    .text {
-        margin-top: 0;
-    }
+
 
     nav {
-        height: 120px;
+        height: 90px;
     }
 
     .blocks_services h3:first-child {
@@ -1057,6 +1059,8 @@ nav.scrolled+main {
         left: 20px;
 
     }
+
+
 
     .blocks_recomendation {
         margin-top: 20px;
