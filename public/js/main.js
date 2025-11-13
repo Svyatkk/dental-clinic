@@ -15,7 +15,7 @@ async function startanimate() {
                 intro.classList.add('hide');
 
                 resolve();
-            }, 1300);
+            }, 1000);
         });
     });
 }
@@ -24,6 +24,7 @@ async function init() {
     await startanimate()
     return observe.observe(main_block)
 }
+
 
 init()
 
