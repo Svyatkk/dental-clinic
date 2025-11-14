@@ -6,8 +6,6 @@ async function startanimate() {
     return new Promise((resolve) => {
         window.addEventListener('load', () => {
 
-
-
             setTimeout(() => {
                 logo.classList.add('appear');
             }, 300);
@@ -30,8 +28,12 @@ async function init() {
 
 
 
+
+
+
 }
 init()
+
 
 
 function listen() {
@@ -115,8 +117,6 @@ function createBlock(button) {
         localMenu.style.pointerEvents = 'auto';
     });
 
-
-
     button.addEventListener('mouseleave', () => {
         clearTimeout(hideTimeout);
         hideTimeout = setTimeout(() => {
@@ -158,6 +158,7 @@ createBlock(button_service, rect_button_service)
 createBlock(button_ort, rect_button_ort)
 
 
+
 let menu_toggle = document.querySelector('.menu-toggle')
 let sidebar_menu = document.querySelector('.sidebar_menu')
 
@@ -172,16 +173,11 @@ let localMenu = document.querySelectorAll('.menu_buttons_sd acc_sd')
 let alla = document.querySelectorAll('.menu_buttons_sd >a')
 
 
+
 alla.forEach(item => {
     item.addEventListener('click', () => {
         item.nextElementSibling.classList.toggle('active')
     })
 })
-
-
-
-
-
-
 
 
