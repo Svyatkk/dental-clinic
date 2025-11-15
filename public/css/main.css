@@ -550,6 +550,7 @@ nav.scrolled+main {
     align-content: center;
     text-align: center;
 
+
     box-sizing: border-box;
 
 }
@@ -934,10 +935,8 @@ footer {
     background-color: #333;
     z-index: 100;
     transform: translateY(-200px);
-
     display: flex;
     padding: 20px;
-
 
 }
 
@@ -962,11 +961,41 @@ footer {
 .block_footer div:nth-child(2)>div {
     width: 90%;
     height: 100%;
-    border: 1px solid white;
+    border: 1px solid red;
     padding: 0 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.block_footer h2 {
+    color: white;
+}
+
+
+.block_footer p {
+    color: #555;
+}
+
+
+.block_footer label {
+    margin: 2px;
+    border-bottom: 1px solid white;
+    width: 50%;
+    text-align: center;
+
+
+}
+
+.block_footer input {
+    padding: 8px;
+
+
+    margin-bottom: 8px;
+}
+
+
 
 
 
@@ -983,6 +1012,9 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
         width: 100%;
+
+
+
 
     }
 
@@ -1013,6 +1045,8 @@ footer {
 
     .blocks_services h3:first-child {
         position: absolute;
+
+
         left: calc(12% - 20px);
     }
 
