@@ -1,0 +1,45 @@
+.calling_block {
+    width: 11em;
+    border: 2px solid #555;
+    text-align: center;
+    border-radius: 10px;
+    align-content: center;
+    background-color: transparent;
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+    height: calc(100% - 5px);
+}
+
+
+
+.calling_block p {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    color: white;
+    transition: color 0.3s ease;
+
+}
+
+.calling_block::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    border-radius: 5px;
+    background-color: #555;
+    width: 0%;
+    left: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.calling_block:hover::before {
+    width: 100%;
+}
+
+.calling_block:hover p {
+    color: white;
+}

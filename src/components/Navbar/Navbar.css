@@ -1,0 +1,147 @@
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    align-items: center;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    transition: background-color 0.35s ease,
+        height 0.35s cubic-bezier(0.25, 0.1, 0.25, 1),
+        box-shadow 0.35s ease,
+        transform 0.35s ease;
+    z-index: 1100;
+    right: 0;
+
+
+}
+
+
+
+
+
+.block_toggle_aboutus,
+.block_toggle_service {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+
+    max-width: var(--max-width);
+}
+
+.block_toggle_aboutus>a,
+.block_toggle_service>a {
+    color: white;
+    padding: 15px;
+    font-size: 1.1em;
+    background-color: rgb(34, 30, 30);
+
+}
+
+
+nav.scrolled {
+    background-color: rgba(51, 51, 51, 0.85);
+    height: 70px;
+    transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 40px,
+        rgba(0, 0, 0, 0.15) 0px 10px 20px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+
+.navbar {
+    width: 100%;
+    max-width: var(--max-width);
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar .logo {
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    max-width: 120px;
+    border-radius: 10px;
+
+}
+
+
+.menu-toggle.active span:nth-child(1) {
+    top: 50% !important;
+    transform: translate(-50%, -50%) rotate(45deg) !important;
+}
+
+.menu-toggle.active span:nth-child(2) {
+    display: none !important;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    top: 50% !important;
+    transform: translate(-50%, -50%) rotate(-45deg) !important;
+}
+
+.menu-toggle {
+    display: none;
+    background-color: transparent;
+    height: 100%;
+    width: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.menu-toggle span {
+    height: 5px;
+    background-color: white;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.menu-toggle span:nth-child(1) {
+    top: 25%;
+}
+
+.menu-toggle span:nth-child(2) {
+    top: 50%;
+}
+
+.menu-toggle span:nth-child(3) {
+    top: 75%;
+}
+
+.menu-toggle.active .sidebar_menu {
+    transform: translateX(0%) !important;
+}
+
+
+@media (max-width: 900px) {
+    .menu-toggle {
+        display: block !important;
+        cursor: pointer;
+        z-index: 2100;
+    }
+
+    .menu_buttons {
+        display: none;
+    }
+
+
+    .calling_block {
+        display: none;
+    }
+}
