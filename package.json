@@ -14,6 +14,10 @@
     "web-vitals": "^2.1.4",
     "homepage": "https://Svyatkk.github.io/dental-clinic"
   },
+  "engines": {
+    "node": "20.x",
+    "npm": "11.x"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
