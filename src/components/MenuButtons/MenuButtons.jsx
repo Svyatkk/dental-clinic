@@ -24,41 +24,41 @@ export default function MenuButtons() {
 
 
                         onMouseEnter={() => setOpen(true)}
-                        onMouseLeave={() => setOpen(false)} href="">Послуги</a>
+                        onMouseLeave={() => setOpen(false)} href="#">Послуги</a>
 
                     <div className={`services_menu ${open ? "show" : ""}`} onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
 
                         <div className="white_circle_menu">
                         </div>
 
-                        <a href="">Стоматогія</a>
-                        <a href="">Стоматогія</a>
-                        <a href="">Стоматогія</a>
-                        <a href="">Стоматогія</a>
-                        <a href="">Стоматогія</a>
-                        <a href="">Стоматогія</a>
+                        <a href="#">Стоматогія</a>
+                        <a href="#">Стоматогія</a>
+                        <a href="#">Стоматогія</a>
+                        <a href="#">Стоматогія</a>
+                        <a href="#">Стоматогія</a>
+                        <a href="#">Стоматогія</a>
                     </div>
                 </div>
 
-                <a href="">Ціни</a>
+                <a href="#">Ціни</a>
 
                 <div className='menu_item'>
 
                     <a onMouseEnter={() => setOpenAbout(true)}
-                        onMouseLeave={() => setOpenAbout(false)} href="">Про нас</a>
+                        onMouseLeave={() => setOpenAbout(false)} href="#">Про нас</a>
                     <div className={`services_menu ${openAbout ? "show" : ""}`} onMouseEnter={() => setOpenAbout(true)} onMouseLeave={() => setOpenAbout(false)}>
                         <div className="white_circle_menu">
 
                         </div>
-                        <a href="">Наша історія</a>
-                        <a href="">Наші роботи</a>
+                        <a href="#">Наша історія</a>
+                        <a href="#">Наші роботи</a>
 
                     </div>
                 </div>
 
 
-                <a href="">Відгуки</a>
-                <a href="">Контакти</a>
+                <a href="#">Відгуки</a>
+                <a href="#">Контакти</a>
 
 
 

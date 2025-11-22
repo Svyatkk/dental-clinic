@@ -20,7 +20,7 @@ export default function BlockRecomendation() {
                             відвідувати стоматолога без черг та зайвого очікування.
 
                         </p>
-                        <a href="">Детальніше про нас <span>&#8594;</span></a>
+                        <a href="#">Детальніше про нас <span>&#8594;</span></a>
                     </div>
 
                     <div className="block_2">

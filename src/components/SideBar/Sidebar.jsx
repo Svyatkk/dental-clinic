@@ -34,7 +34,7 @@ export default function SideBar({ isOpenSd }) {
 
                     </div>
 
-                    <a href="">Ціни</a>
+                    <a href="#">Ціни</a>
                     <a
                         href="#"
                         onClick={(e) => {
@@ -45,12 +45,12 @@ export default function SideBar({ isOpenSd }) {
                         Про нас
                     </a>
                     <div className={`block_toggle_container ${isOpenAbout ? "open" : ""}`}>
-                        <a href="">Наша історія</a>
-                        <a href="">Наші роботи</a>
+                        <a href="#">Наша історія</a>
+                        <a href="#">Наші роботи</a>
                     </div>
 
-                    <a href="">Відгуки</a>
-                    <a href="">Контакти</a>
+                    <a href="#">Відгуки</a>
+                    <a href="#">Контакти</a>
 
                 </div>
                 <Button></Button>

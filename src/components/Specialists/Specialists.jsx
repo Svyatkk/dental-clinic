@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
 import 'swiper/css';
@@ -7,24 +6,7 @@ import 'swiper/css/navigation';
 import './Specialists.css';
 
 
-function SlideNextButton() {
-    const swiper = useSwiper()
 
-    return (
-        <button onClick={() => swiper.slideNext()}>Next </button>
-
-
-    )
-}
-function SlidePrevButton() {
-    const swiper = useSwiper()
-
-
-
-    return (
-        <button onClick={() => swiper.slidePrev()}>Prev</button>
-    )
-}
 
 export default function Specialists() {
 
@@ -53,8 +35,6 @@ export default function Specialists() {
                     <SwiperSlide className="swiper-slide">slide2</SwiperSlide>
                     <SwiperSlide className="swiper-slide">slide3</SwiperSlide>
                     <SwiperSlide className="swiper-slide">slide4</SwiperSlide>
-
-
 
                 </Swiper>
             </div>
