@@ -9,7 +9,9 @@ import './Navbar.css';
 export default function Navbar({ children }) {
 
 
-    const [somethig, somethingn] = useState(false)
+
+
+
 
     const [scrolled, setScrolled] = useState(false)
     const [menuToggleclicked, setMenutoggle] = useState(false)

@@ -13,6 +13,7 @@
     height: auto;
 
 
+    align-items: center;
 }
 
 .block_specialists {
@@ -21,10 +22,11 @@
 }
 
 .swiper {
-    width: 60%;
-    height: 100%;
+    width: 50%;
+    height: 90%;
     position: relative;
     border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
 
@@ -35,9 +37,8 @@
     justify-content: center;
     align-items: center;
     min-height: 100%;
-    background-color: #7b7777;
+    background-color: #333;
     border-radius: 25px;
-
 }
 
 .swiper button {
@@ -123,7 +124,7 @@
 
     .block_specialists {
         display: flex;
-        width: 100%;
+        width: 90%;
         align-items: center;
 
     }
@@ -133,7 +134,7 @@
     }
 
     .swiper {
-        width: 100% !important;
+        width: 90% !important;
 
     }
 }

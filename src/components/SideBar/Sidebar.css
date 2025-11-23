@@ -18,7 +18,12 @@
 
 .sidebar_menu.open {
     transform: translateX(0);
+
 }
+
+
+
+
 
 .menu_buttons_sd {
     margin-top: 30px;

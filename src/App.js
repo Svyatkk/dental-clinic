@@ -11,7 +11,7 @@ import Sidebar from './components/SideBar/Sidebar';
 import Services from './components/Services/Services';
 import Specialists from './components/Specialists/Specialists';
 import Consultation from './components/Consultation/Consultation';
-
+import Footer from './components/Footer/Footer';
 function App() {
   return (
     <div className='App'>
@@ -41,15 +41,18 @@ function App() {
       <Sidebar></Sidebar>
 
 
-
-
       <Services></Services>
 
       <Specialists></Specialists>
 
       <Consultation></Consultation>
 
-    </div>
+
+
+      <Footer></Footer>
+
+    </div >
+
 
 
   );

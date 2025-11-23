@@ -2,7 +2,7 @@
   "name": "dental-clinic",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Svyatkk.github.io/dental-clinic",
+  "homepage": "https://svyatkk.github.io/dental-clinic",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
