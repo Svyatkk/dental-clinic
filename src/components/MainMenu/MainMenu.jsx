@@ -22,6 +22,7 @@ export default function MainMenu() {
 
 
 
+
                             <div className="adress">
                                 <p>смт. Ружин, вул. гетьманська 112а</p>
                                 <a>123091283</a>
