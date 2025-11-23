@@ -39,7 +39,7 @@ export default function MainMenu() {
                     <div className="block_wrapper_2">
                         <div className="circle_gray">
                             <div className="circle_white">
-                                <img src="/images/result.png" alt="result" />
+                                <img src="/images/result.png" alt="" />
                             </div>
                         </div>
                     </div>
