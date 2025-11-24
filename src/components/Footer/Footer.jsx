@@ -10,6 +10,7 @@ export default function Footer() {
 
             <section className="footer">
                 <footer>
+                    <div>something</div>
 
 
                 </footer>

@@ -9,8 +9,6 @@ export default function SideBar({ isOpenSd }) {
 
     const [isOpenAbout, setOpenAbout] = useState(false)
 
-
-
     return (
         <>
             <section className={`sidebar_menu ${isOpenSd ? "open" : ""}   `}>

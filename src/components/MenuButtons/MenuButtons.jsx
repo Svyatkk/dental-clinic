@@ -8,10 +8,6 @@ export default function MenuButtons() {
     const [open, setOpen] = useState(false)
     const [openAbout, setOpenAbout] = useState(false)
 
-
-
-
-
     return (
         <>
 

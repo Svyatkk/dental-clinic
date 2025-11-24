@@ -21,8 +21,16 @@ nav {
 }
 
 
+nav.opened {
+    background-color: #333;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 40px,
+        rgba(0, 0, 0, 0.15) 0px 10px 20px;
+    transform: none;
+    transition: 0.4s ease;
 
-
+}
 
 .block_toggle_aboutus,
 .block_toggle_service {
@@ -62,6 +70,8 @@ nav.scrolled {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.5s;
+
 
 }
 

@@ -48,9 +48,6 @@ function App() {
       <Consultation></Consultation>
 
 
-
-      <Footer></Footer>
-
     </div >
 
 

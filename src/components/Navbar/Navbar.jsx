@@ -8,14 +8,8 @@ import './Navbar.css';
 
 export default function Navbar({ children }) {
 
-
-
-
-
-
     const [scrolled, setScrolled] = useState(false)
     const [menuToggleclicked, setMenutoggle] = useState(false)
-
 
     useEffect(() => {
         const handleScroll = () => {
@@ -32,7 +26,7 @@ export default function Navbar({ children }) {
 
     return (
         <>
-            <nav className={`${scrolled ? "scrolled" : ""}`}>
+            <nav className={`${scrolled ? "scrolled" : ""} ${menuToggleclicked ? "opened" : ""}`}>
 
                 <div className="navbar">
 
@@ -41,17 +35,11 @@ export default function Navbar({ children }) {
 
                     </div>
 
-
                     <MenuButtons></MenuButtons>
-
-
 
                     <Button></Button>
                     <div
-
-
                         onClick={() => setMenutoggle(!menuToggleclicked)}
-
                         className={`menu-toggle ${menuToggleclicked ? "active" : ""}`}>
                         <span></span>
                         <span></span>
@@ -62,10 +50,7 @@ export default function Navbar({ children }) {
                 </div>
             </nav>
 
-
             <SideBar isOpenSd={menuToggleclicked} />
-
-
         </>
     )
 }

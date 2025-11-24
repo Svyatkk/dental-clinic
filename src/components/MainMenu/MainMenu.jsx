@@ -11,17 +11,11 @@ export default function MainMenu() {
             <section>
                 <div className="main_block">
                     <div className="block_wrapper_1">
-
                         <div>
                             <div className="text">
                                 <h1>Комплексні стоматологічні послуги</h1>
                                 <p>Допоможемо засяяти усмішкою мрії</p>
                             </div>
-
-
-
-
-
 
                             <div className="adress">
                                 <p>смт. Ружин, вул. гетьманська 112а</p>
@@ -32,7 +26,6 @@ export default function MainMenu() {
                                     на мапі</a>
                             </div>
                         </div>
-
 
                     </div>
 
@@ -45,11 +38,7 @@ export default function MainMenu() {
                     </div>
 
 
-
-
-
                 </div>
-
 
                 <div className="description_block_3">
                     <p>Ми раді вітати вас у нашій стоматологічній клініці Sigma Dent, де ми піклуємося про ваше здоров’я та
