@@ -9,7 +9,6 @@
     z-index: 100;
 }
 
-
 .consultation {
     display: flex;
     height: 300px;
@@ -20,9 +19,6 @@
     background-color: #555;
     justify-content: space-around;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-
-
     gap: 20px;
 }
 
@@ -49,19 +45,11 @@
     margin: 0;
     height: 60px;
     width: 200px;
-
-
     border: 1px solid white;
-
-
-
 }
 
 .zapys_block .calling_block::before {
     background-color: #333;
-
-
-
 }
 
 
@@ -93,11 +81,8 @@
         gap: 30px;
     }
 
-
     .zapys_block .calling_block {
         display: block !important;
-
-
     }
 
 }
