@@ -35,10 +35,10 @@ export default function Navbar({ children }) {
 
                 <div className="navbar">
 
-                    <div className="logo">
+                    <a href='/dental-clinic' className="logo">
                         <img src="" alt="" />
 
-                    </div>
+                    </a>
 
                     <MenuButtons></MenuButtons>
 

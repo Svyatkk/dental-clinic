@@ -16,13 +16,14 @@ export default function MenuButtons() {
                 <div className='menu_item'>
 
                     <a
-                        onClick={e => (e.preventDefault(), setOpen(true))}
+
+
 
 
 
 
                         onMouseEnter={() => setOpen(true)}
-                        onMouseLeave={() => setOpen(false)} href="#">Послуги</a>
+                        onMouseLeave={() => setOpen(false)} href="/dental-clinic/services">Послуги</a>
 
                     <div className={`services_menu ${open ? "show" : ""}`} onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
 
