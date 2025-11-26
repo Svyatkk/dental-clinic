@@ -12,6 +12,9 @@ import Services from './components/Services/Services';
 import Specialists from './components/Specialists/Specialists';
 import Consultation from './components/Consultation/Consultation';
 import Footer from './components/Footer/Footer';
+
+
+
 function App() {
   return (
     <div className='App'>
@@ -20,20 +23,18 @@ function App() {
 
         <Navbar>
 
+
+
         </Navbar>
+
 
         <Main>
 
           <MainMenu></MainMenu>
 
-
-
         </Main>
 
-
         <BlockRecomendation></BlockRecomendation>
-
-
 
       </>
 
@@ -48,7 +49,10 @@ function App() {
       <Consultation></Consultation>
 
 
+
+
     </div >
+
 
 
 
@@ -56,3 +60,7 @@ function App() {
 }
 
 export default App;
+
+
+
+

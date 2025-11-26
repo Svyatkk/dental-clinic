@@ -93,6 +93,8 @@ section {
     align-items: center;
 }
 
+
+
 .circle_white {
     background: white;
     width: 90%;
@@ -124,6 +126,8 @@ section {
     box-sizing: border-box;
     margin: 0 20px;
     z-index: 500;
+
+
 }
 
 .description_block_3 p {
@@ -237,6 +241,8 @@ section {
         margin: 30px auto 20px;
         width: calc(100% - 60px);
     }
+
+
 
     .description_block_3 p {
         font-size: 1.2em;

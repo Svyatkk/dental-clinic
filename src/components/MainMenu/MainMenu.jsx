@@ -8,14 +8,19 @@ export default function MainMenu() {
 
     return (
         <>
+
+
             <section>
                 <div className="main_block">
+
                     <div className="block_wrapper_1">
                         <div>
                             <div className="text">
                                 <h1>Комплексні стоматологічні послуги</h1>
                                 <p>Допоможемо засяяти усмішкою мрії</p>
                             </div>
+
+
 
                             <div className="adress">
                                 <p>смт. Ружин, вул. гетьманська 112а</p>
@@ -32,6 +37,8 @@ export default function MainMenu() {
                     <div className="block_wrapper_2">
                         <div className="circle_gray">
                             <div className="circle_white">
+
+
                                 <img src="/dental-clinic/images/result.png" alt="" />
                             </div>
                         </div>

@@ -19,6 +19,8 @@ export default function MenuButtons() {
                         onClick={e => (e.preventDefault(), setOpen(true))}
 
 
+
+
                         onMouseEnter={() => setOpen(true)}
                         onMouseLeave={() => setOpen(false)} href="#">Послуги</a>
 
@@ -36,6 +38,8 @@ export default function MenuButtons() {
                     </div>
                 </div>
 
+
+
                 <a href="#">Ціни</a>
 
                 <div className='menu_item'>
@@ -51,6 +55,7 @@ export default function MenuButtons() {
 
                     </div>
                 </div>
+
 
 
                 <a href="#">Відгуки</a>

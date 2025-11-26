@@ -11,6 +11,7 @@ export default function SideBar({ isOpenSd }) {
 
     return (
         <>
+
             <section className={`sidebar_menu ${isOpenSd ? "open" : ""}   `}>
 
                 <div className='menu_buttons_sd'>

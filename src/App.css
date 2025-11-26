@@ -11,8 +11,6 @@ body {
   height: 200vh;
   width: 100% !important;
 
-
-
 }
 
 * {
@@ -31,12 +29,14 @@ main {
   background-color: #333;
   width: 100%;
   height: auto;
-
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: end;
-  background-image: url('dental-clinic\public\images\photo_2025-11-09_20-06-37.jpg');
+
+  background-image: url('./images/photo_2025-11-09_20-06-37.jpg');
+
+
 
 
 
