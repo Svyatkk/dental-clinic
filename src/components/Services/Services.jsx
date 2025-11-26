@@ -3,14 +3,17 @@ import React from 'react';
 import { useState } from 'react';
 
 
-export default function Services() {
+export default function Services({ pageIsOpen }) {
 
 
 
     return (
         <>
 
-            <section className="blocks_services">
+
+
+
+            <section className={`blocks_services ${pageIsOpen ? "pageIsOpen" : ""}`}>
                 <h3>Наші послуги</h3>
 
                 <div className="blocks_service">

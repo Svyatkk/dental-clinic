@@ -3,17 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import ServicesPage from './pages/ServicesPage';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: '/dental-clinic',
+    path: '/',
     element: <App />
   },
   {
-    path: '/dental-clinic/services',
+    path: '/services',
     element: <ServicesPage />
   },
   {

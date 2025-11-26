@@ -10,10 +10,15 @@
     justify-items: center;
     padding: 0 20px !important;
     box-sizing: border-box;
-    margin: 100px auto 0 auto;
-    border: 1px solid red;
+    margin: 80px auto 0 auto;
 }
 
+.blocks_services.pageIsOpen {
+    margin: 200px auto 0 auto;
+
+
+
+}
 
 .blocks_service {
     height: 200px;

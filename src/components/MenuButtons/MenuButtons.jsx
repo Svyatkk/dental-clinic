@@ -17,13 +17,8 @@ export default function MenuButtons() {
 
                     <a
 
-
-
-
-
-
                         onMouseEnter={() => setOpen(true)}
-                        onMouseLeave={() => setOpen(false)} href="/dental-clinic/services">Послуги</a>
+                        onMouseLeave={() => setOpen(false)} href="#/services">Послуги</a>
 
                     <div className={`services_menu ${open ? "show" : ""}`} onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
 
@@ -38,8 +33,6 @@ export default function MenuButtons() {
                         <a href="#">Стоматогія</a>
                     </div>
                 </div>
-
-
 
                 <a href="#">Ціни</a>
 
@@ -57,13 +50,8 @@ export default function MenuButtons() {
                     </div>
                 </div>
 
-
-
                 <a href="#">Відгуки</a>
                 <a href="#">Контакти</a>
-
-
-
 
             </div >
         </>
