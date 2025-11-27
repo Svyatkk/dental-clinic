@@ -11,8 +11,6 @@ export default function Services({ pageIsOpen }) {
         <>
 
 
-
-
             <section className={`blocks_services ${pageIsOpen ? "pageIsOpen" : ""}`}>
                 <h3>Наші послуги</h3>
 

@@ -15,6 +15,7 @@ export default function ServicesPage() {
 
 
 
+
                 <Navbar></Navbar>
                 <Services pageIsOpen={location.pathname === '/services'}></Services>
                 <Consultation></Consultation>
