@@ -24,10 +24,12 @@ function App() {
         <Navbar>
 
 
+
         </Navbar>
 
 
         <Main>
+
 
 
           <MainMenu></MainMenu>
@@ -39,10 +41,6 @@ function App() {
       </>
 
 
-
-
-
-
       <Sidebar></Sidebar>
 
 
@@ -50,7 +48,9 @@ function App() {
 
       <Specialists></Specialists>
 
+
       <Consultation></Consultation>
+
 
 
 

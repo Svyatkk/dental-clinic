@@ -23,6 +23,7 @@ export default function ServicesPage() {
         parent: <a>/</a>
     }
 
+
     return (
         <>
             <Navbar></Navbar>

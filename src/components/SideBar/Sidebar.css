@@ -26,6 +26,7 @@
 
 
 
+
 .menu_buttons_sd {
     margin-top: 30px;
     display: flex;
@@ -35,7 +36,6 @@
     justify-content: center;
     width: 80% !important;
     margin: 40px auto 0 auto;
-
 
 }
 
@@ -67,6 +67,7 @@
     padding: 20px 0 25px 0;
     text-decoration: none;
     box-sizing: border-box;
+
 }
 
 .block_toggle_container>a:first-child {
