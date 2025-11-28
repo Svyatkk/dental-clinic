@@ -24,11 +24,11 @@ function App() {
         <Navbar>
 
 
-
         </Navbar>
 
 
         <Main>
+
 
           <MainMenu></MainMenu>
 
@@ -37,6 +37,8 @@ function App() {
         <BlockRecomendation></BlockRecomendation>
 
       </>
+
+
 
 
 

@@ -11,10 +11,11 @@
     padding: 0 20px !important;
     box-sizing: border-box;
     margin: 80px auto 0 auto;
+    border: 1px solid white;
 }
 
 .blocks_services.pageIsOpen {
-    margin: 200px auto 0 auto;
+    margin: 80px auto 0 auto;
 
 
 
