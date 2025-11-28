@@ -1,14 +1,7 @@
 import './ShowTransition.css';
 import { useState } from 'react';
 
-export default function ShowTransition({ page_name }) {
-
-    const arrayOfPage = []
-
-    arrayOfPage.push(page_name)
-
-    const [page, setPage] = useState(arrayOfPage)
-
+export default function ShowTransition({ page }) {
 
 
 
@@ -16,16 +9,10 @@ export default function ShowTransition({ page_name }) {
     return (
         <section className="showTransition">
             <div className='path_page'>
-
-
-                <div>
-                    <a href="">Головна</a> {arrayOfPage}
-                </div>
-
-
+                <a href="/">Головна </a>
+                <span>/</span>
+                <a className='active' href='/'> {page.name_of_page} </a>
             </div>
-
-
         </section>
 
     )

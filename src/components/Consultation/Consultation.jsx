@@ -7,9 +7,6 @@ export default function Consultation() {
 
 
 
-
-
-
     return (
         <section className="consultation_block">
 
