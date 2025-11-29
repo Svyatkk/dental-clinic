@@ -24,11 +24,12 @@ function App() {
         <Navbar>
 
 
-
         </Navbar>
 
 
         <Main>
+
+
 
 
 

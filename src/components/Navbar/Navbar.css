@@ -72,7 +72,6 @@ nav.scrolled {
     align-items: center;
     transition: 0.5s;
 
-
 }
 
 .navbar .logo {
@@ -81,9 +80,9 @@ nav.scrolled {
     border: 1px solid white;
     max-width: 120px;
     border-radius: 10px;
-
-
 }
+
+
 
 
 .menu-toggle.active span:nth-child(1) {
