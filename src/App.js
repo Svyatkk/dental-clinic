@@ -22,17 +22,8 @@ function App() {
       <>
 
         <Navbar>
-
-
         </Navbar>
-
-
         <Main>
-
-
-
-
-
           <MainMenu></MainMenu>
 
         </Main>
@@ -40,7 +31,6 @@ function App() {
         <BlockRecomendation></BlockRecomendation>
 
       </>
-
 
       <Sidebar></Sidebar>
 
@@ -54,10 +44,7 @@ function App() {
 
 
 
-
-
     </div >
-
 
 
 

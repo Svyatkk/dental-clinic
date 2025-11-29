@@ -16,12 +16,15 @@ export default function ServicesPage() {
     const name_of_page = '/Послуги'
 
 
+
+
     const page = {
         name_of_page: 'Послуги',
         haschildren: true,
         pageLocation: location,
         parent: <a>/</a>
     }
+
 
 
     return (

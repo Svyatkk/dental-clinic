@@ -1,12 +1,25 @@
 import './MenuButtons.css';
 import React, { useState } from 'react';
+import ShowPrices from '../../pages/ShowPrices';
 
 
 
 
-export default function MenuButtons() {
+export default function MenuButtons({ onSelcted }) {
     const [open, setOpen] = useState(false)
     const [openAbout, setOpenAbout] = useState(false)
+
+
+
+
+
+
+
+
+
+    function clicked(selectPage) {
+        onSelcted(selectPage)
+    }
 
     return (
         <>
@@ -24,8 +37,10 @@ export default function MenuButtons() {
 
                         <div className="white_circle_menu">
                         </div>
+                        <a
+                            onClick={() => clicked('Терапевтична стоматогія')}
 
-                        <a href="#">Стоматогія</a>
+                            href="#">Терапевтична стоматогія</a>
                         <a href="#">Стоматогія</a>
                         <a href="#">Стоматогія</a>
                         <a href="#">Стоматогія</a>
