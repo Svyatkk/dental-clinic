@@ -5,7 +5,6 @@ export default function ShowTransition({ page }) {
 
 
 
-
     return (
         <section className="showTransition">
             <div className='path_page'>
@@ -14,6 +13,5 @@ export default function ShowTransition({ page }) {
                 <a className='active' href='/'> {page.name_of_page} </a>
             </div>
         </section>
-
     )
 }

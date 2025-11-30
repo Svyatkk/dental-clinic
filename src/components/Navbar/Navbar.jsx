@@ -40,7 +40,7 @@ export default function Navbar({ children }) {
 
                     </a>
 
-                    <MenuButtons></MenuButtons>
+                    <MenuButtons ></MenuButtons>
 
                     <Button></Button>
                     <div

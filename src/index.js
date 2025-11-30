@@ -18,7 +18,7 @@ const router = createHashRouter([
     element: <ServicesPage />
   },
   {
-    path: `/services/service`,
+    path: `/services/service/:service`,
     element: <ShowPrices></ShowPrices>
   },
   {
@@ -26,12 +26,6 @@ const router = createHashRouter([
     element: <h1 style={{ color: "white", padding: "40px" }}>404 - Page Not Found</h1>
   }
 ]);
-
-
-
-
-
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

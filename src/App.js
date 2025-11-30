@@ -28,6 +28,7 @@ function App() {
 
         </Main>
 
+
         <BlockRecomendation></BlockRecomendation>
 
       </>
