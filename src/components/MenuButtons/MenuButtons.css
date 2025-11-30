@@ -80,6 +80,7 @@
     background-color: #555;
     top: 85%;
     transition: 0.5s;
+
 }
 
 .menu_buttons a:hover::before {
