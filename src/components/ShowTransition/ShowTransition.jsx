@@ -1,8 +1,12 @@
 import './ShowTransition.css';
-import { useState } from 'react';
+import { Children, useState } from 'react';
 
 export default function ShowTransition({ page }) {
 
+
+    const pages = {
+        parentPath: ""
+    }
 
 
     return (
@@ -10,8 +14,13 @@ export default function ShowTransition({ page }) {
             <div className='path_page'>
                 <a href="/">Головна </a>
                 <span>/</span>
-                <a className='active' href='/'> {page.name_of_page} </a>
+
+
+
+                <a className='active' href='#/'> {page} </a>
+
+
             </div>
-        </section>
+        </section >
     )
 }

@@ -12,20 +12,13 @@ export default function ServicesPage() {
 
 
     const location = useLocation()
-    const name_of_page = '/Послуги'
-
-    const page = {
-        name_of_page: 'Послуги',
-        haschildren: true,
-        pageLocation: location,
-        parent: <a>/</a>
-    }
+    const name_of_page = 'Послуги'
 
 
     return (
         <>
             <Navbar></Navbar>
-            <ShowTransition page={page}></ShowTransition>
+            <ShowTransition page={name_of_page}></ShowTransition>
             <Services pageIsOpen={location.pathname === '/services'}></Services>
             <Consultation></Consultation>
         </>

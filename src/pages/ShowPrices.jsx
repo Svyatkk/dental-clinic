@@ -4,12 +4,15 @@ import MenuButtons from "../components/MenuButtons/MenuButtons";
 import { useParams } from "react-router";
 import ShowTransition from "../components/ShowTransition/ShowTransition";
 import Consultation from "../components/Consultation/Consultation";
-
-
+import ServicesPage from "./ServicesPage";
+import ShowPriceBlock from "../components/ShowPriceBlock/ShowPriceBlock";
 
 export default function ShowPrices() {
 
     const { service } = useParams()
+
+
+
 
     const prices = [
         {
@@ -25,10 +28,10 @@ export default function ShowPrices() {
 
     ]
 
-
     let selected = ''
     selected = prices.find(item => item.name === service)
-    const name_of_page = `/Послуги/${service}`
+    const name_of_page = `Послуги / ${service}`
+
 
 
     return (
@@ -36,14 +39,9 @@ export default function ShowPrices() {
         <>
             <Navbar></Navbar>
             <ShowTransition page={name_of_page}></ShowTransition>
+
+            <ShowPriceBlock object={selected}></ShowPriceBlock>
             <Consultation></Consultation>
-            <div>
-
-
-                {
-
-                }
-            </div>
 
 
 

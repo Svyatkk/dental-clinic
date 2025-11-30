@@ -1,0 +1,10 @@
+.show_prices {
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto 0 auto;
+
+}

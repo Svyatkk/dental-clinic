@@ -23,8 +23,6 @@ export default function Specialists() {
                     <a href="">Детальніше про нас <span>&#8594;</span></a>
 
                 </div>
-
-
                 <Swiper
                     spaceBetween={20}
                     slidesPerView={1}
