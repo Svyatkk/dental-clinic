@@ -1,5 +1,6 @@
 import react from "react"
 import './ShowPriceBlock.css';
+import { useState } from "react";
 
 
 export default function ShowPriceBlock({ object }) {
@@ -7,7 +8,12 @@ export default function ShowPriceBlock({ object }) {
 
 
 
+
     const entries = Object.entries(object).filter(([key]) => key !== "name");
+
+
+
+
 
     return (
 
@@ -15,15 +21,16 @@ export default function ShowPriceBlock({ object }) {
 
             <div className="grid_price">
 
-                {entries.map(([serviceName, price]) => (
+                {entries.map(([serviceName, price], index) => (
+
 
                     < div className="block" >
-                        <div className="showname">
+                        <div className={`showname ${index % 2 === 0 ? "active_block" : ""}`}>
                             {serviceName}
                         </div>
 
-                        <div className="showprice">
-                            {price}
+                        <div className={`showprice ${index % 2 === 0 ? "active_block" : ""}`}>
+                            {price} грн
 
                         </div>
                     </div >
