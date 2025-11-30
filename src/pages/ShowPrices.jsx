@@ -28,6 +28,7 @@ export default function ShowPrices() {
 
     ]
 
+
     let selected = ''
     selected = prices.find(item => item.name === service)
     const name_of_page = `Послуги / ${service}`

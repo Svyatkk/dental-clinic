@@ -11,11 +11,13 @@ export default function ShowPriceBlock({ object }) {
     return (
         <>
             <section className="show_prices">
-                object.name
+                {object.name
 
 
+                }
 
             </section>
+
 
 
         </>
