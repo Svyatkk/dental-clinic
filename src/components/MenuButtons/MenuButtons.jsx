@@ -5,7 +5,6 @@ export default function MenuButtons() {
     const [open, setOpen] = useState(false);
     const [openAbout, setOpenAbout] = useState(false);
 
-
     return (
         <>
             <div className='menu_buttons'>
@@ -30,9 +29,13 @@ export default function MenuButtons() {
                             href="#/services/service/Терапевтична стоматологія">
                             Терапевтична стоматологія
                         </a>
+                        <a href="#/services/service/Ортодонтія">Ортодонтія</a>
+                        <a href="#/services/service/Хірургія">Хірургія</a>
+                        <a href="#/services/service/Імплатанція зубів">Імплатанція зубів</a>
+                        <a href="#/services/service/Лікування каналів зуба">Лікування каналів зуба</a>
+                        <a href="#/services/service/Естетична стоматологія">Естетична стоматологія</a>
 
-                        <a href="#/services/service">Ортодонтія</a>
-                        <a href="#/services/service">Хірургія</a>
+
                     </div>
                 </div>
 
@@ -57,7 +60,6 @@ export default function MenuButtons() {
                         <a href="#">Наші роботи</a>
                     </div>
                 </div>
-
 
 
                 <a href="#">Відгуки</a>

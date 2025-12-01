@@ -5,15 +5,20 @@ import { useState } from "react";
 
 export default function ShowPriceBlock({ object }) {
 
-
-
-
-
     const entries = Object.entries(object).filter(([key]) => key !== "name");
 
+    entries.forEach(([serviceName, price], index) => (
+        < div className="block" >
+            <div className={`showname ${index % 2 === 0 ? "active_block" : ""}`}>
+                {serviceName}
+            </div>
 
+            <div className={`showprice ${index % 2 === 0 ? "active_block" : ""}`}>
+                {price} грн
 
-
+            </div>
+        </div >
+    ))
 
     return (
 
@@ -22,8 +27,6 @@ export default function ShowPriceBlock({ object }) {
             <div className="grid_price">
 
                 {entries.map(([serviceName, price], index) => (
-
-
                     < div className="block" >
                         <div className={`showname ${index % 2 === 0 ? "active_block" : ""}`}>
                             {serviceName}
@@ -37,8 +40,6 @@ export default function ShowPriceBlock({ object }) {
                 ))}
 
             </div >
-
-
         </section >
 
     )

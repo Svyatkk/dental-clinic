@@ -10,7 +10,6 @@ export default function Button() {
                 <p>Записатися</p>
             </a>
 
-
         </>
     )
 
