@@ -9,18 +9,6 @@ export default function ShowPriceBlock({ object }) {
 
     const entries = Object.entries(object).filter(([key]) => key !== "name");
 
-    entries.forEach(([serviceName, price], index) => (
-        < div className="block" >
-            <div className={`showname ${index % 2 === 0 ? "active_block" : ""}`}>
-                {serviceName}
-            </div>
-
-            <div className={`showprice ${index % 2 === 0 ? "active_block" : ""}`}>
-                {price} грн
-
-            </div>
-        </div >
-    ))
 
     return (
 
