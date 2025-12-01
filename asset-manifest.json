@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/dental-clinic/static/css/main.3fdce19c.css",
-    "main.js": "/dental-clinic/static/js/main.bd9f148c.js",
+    "main.css": "/dental-clinic/static/css/main.edce4e27.css",
+    "main.js": "/dental-clinic/static/js/main.4f167c09.js",
     "static/media/logo.svg": "/dental-clinic/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/dental-clinic/index.html",
-    "main.3fdce19c.css.map": "/dental-clinic/static/css/main.3fdce19c.css.map",
-    "main.bd9f148c.js.map": "/dental-clinic/static/js/main.bd9f148c.js.map"
+    "main.edce4e27.css.map": "/dental-clinic/static/css/main.edce4e27.css.map",
+    "main.4f167c09.js.map": "/dental-clinic/static/js/main.4f167c09.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fdce19c.css",
-    "static/js/main.bd9f148c.js"
+    "static/css/main.edce4e27.css",
+    "static/js/main.4f167c09.js"
   ]
 }
