@@ -39,7 +39,8 @@ export default function MenuButtons() {
                     </div>
                 </div>
 
-                <a href="#">Ціни</a>
+
+                <a href="#/prices">Ціни</a>
 
                 <div className='menu_item'>
                     <a

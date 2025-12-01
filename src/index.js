@@ -7,6 +7,7 @@ import ShowPrices from './pages/ShowPrices';
 import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import ServicesPage from './pages/ServicesPage';
+import ShowAllPrices from './pages/ShowAllPrices';
 
 const router = createHashRouter([
   {
@@ -20,6 +21,10 @@ const router = createHashRouter([
   {
     path: `/services/service/:service`,
     element: <ShowPrices></ShowPrices>
+  },
+  {
+    path: '/prices',
+    element: <ShowAllPrices></ShowAllPrices>
   },
   {
     path: '*',

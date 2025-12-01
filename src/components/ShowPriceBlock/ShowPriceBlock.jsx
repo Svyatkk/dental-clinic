@@ -3,6 +3,8 @@ import './ShowPriceBlock.css';
 import { useState } from "react";
 
 
+
+
 export default function ShowPriceBlock({ object }) {
 
     const entries = Object.entries(object).filter(([key]) => key !== "name");
@@ -22,7 +24,7 @@ export default function ShowPriceBlock({ object }) {
 
     return (
 
-        <section className="show_prices">
+        < section className="show_prices" >
 
             <div className="grid_price">
 
