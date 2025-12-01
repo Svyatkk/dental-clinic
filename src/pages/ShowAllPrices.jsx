@@ -17,11 +17,8 @@ export default function ShowAllPrices() {
     function generateForAccordeon(objects) {
         return objects.map((element, index) => (
             <div
-
-
                 className={`accordeon ${open === index ? "show" : ""}`}
                 onClick={() => onclick(index)}
-
                 key={index}>
                 <h3>{element.name}</h3>
 

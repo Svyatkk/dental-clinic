@@ -61,6 +61,11 @@
 
 .accordeon.show .show_info {
     max-height: 2500px !important;
+}
+
+.accordeon.show h3 {
+    margin-bottom: 10px !important;
+
 
 }
 
@@ -82,6 +87,11 @@
 .showname,
 .showprice {
     box-sizing: border-box;
+}
+
+.accordeon h3 {
+    transition: 0.5s;
+    margin-left: 10px;
 }
 
 
