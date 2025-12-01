@@ -7,19 +7,31 @@ import { infoServicePages } from "../components/Data/DataServicePrices"
 
 export default function ShowAllPrices() {
 
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(null)
 
+    function onclick(i) {
 
-    function onClick() {
-        setOpen(!open)
+        setOpen(open === i ? null : i)
     }
-
-
 
     function generateForAccordeon(objects) {
         return objects.map((element, index) => (
-            <div className="accordeon" key={index}>
-                <ShowPriceBlock object={element} />
+            <div
+
+
+                className={`accordeon ${open === index ? "show" : ""}`}
+                onClick={() => onclick(index)}
+
+                key={index}>
+                <h3>{element.name}</h3>
+
+                <div
+
+
+                    className="show_info">
+                    <ShowPriceBlock object={element} />
+                </div>
+
             </div>
         ));
     }
@@ -29,9 +41,11 @@ export default function ShowAllPrices() {
         <>
 
 
-
             <Navbar />
-            {generateForAccordeon(infoServicePages)}
+            <div className="container_for_accordeon">
+                {generateForAccordeon(infoServicePages)}
+
+            </div>
             <Consultation />
         </>
     )
