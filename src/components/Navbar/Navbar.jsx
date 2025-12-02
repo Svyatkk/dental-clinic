@@ -10,9 +10,6 @@ export default function Navbar({ children }) {
 
     const [clicked, Setcliccliked] = useState(false)
 
-
-
-
     const [scrolled, setScrolled] = useState(false)
     const [menuToggleclicked, setMenutoggle] = useState(false)
 
@@ -39,7 +36,6 @@ export default function Navbar({ children }) {
                         <img src="" alt="" />
 
                     </a>
-
                     <MenuButtons ></MenuButtons>
 
                     <Button></Button>
