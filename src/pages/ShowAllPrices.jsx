@@ -9,9 +9,6 @@ export default function ShowAllPrices() {
 
     const [open, setOpen] = useState([])
 
-
-
-
     function onclick(i) {
         if (open.includes(i)) {
             setOpen(open.filter(item => item !== i))
@@ -27,8 +24,7 @@ export default function ShowAllPrices() {
             <div
                 className={`accordeon ${open.includes(index) ? "show" : ""}`}
                 onClick={() =>
-                    onclick(index)}
-                key={index}>
+                    onclick(index)}>
                 <h3>{element.name}</h3>
 
                 <div

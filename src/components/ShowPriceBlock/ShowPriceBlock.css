@@ -123,10 +123,12 @@
 .accordeon .show_info {
     max-height: 0;
     overflow: hidden;
+    box-sizing: border-box;
     transition: max-height 0.5s ease;
     text-align: center;
     align-items: center;
     width: 100%;
+    border: 4px solid yellow;
 }
 
 .container_for_accordeon {
@@ -145,8 +147,6 @@
     display: flex;
     align-items: center;
     padding: 0 20px;
-
-
 }
 
 .showprice {
@@ -157,16 +157,47 @@
     height: 100%;
     border-radius: 15px;
     justify-content: center;
+
 }
 
 @media (max-width:1200px) {
     .container_for_accordeon {
         width: auto;
+        height: auto;
     }
 
     .accordeon {
         width: calc(100% - 40px);
         margin: 20px !important;
+
+    }
+}
+
+@media (max-width:800px) {
+
+    .showname {
+        height: 100%;
+        border: 1px solid purple;
+    }
+
+
+
+    .block {
+        border: 1px solid white;
+        height: auto !important;
+        min-height: 60px !important;
+        margin-top: 20px;
+    }
+
+    .accordeon.show .show_info {
+        max-height: 2000px !important;
+        height: 100% !important;
+    }
+
+    .grid_price {
+        border: 3px solid black;
+        gap: 0;
+
 
     }
 }
