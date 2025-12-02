@@ -3,6 +3,11 @@ import Consultation from "../components/Consultation/Consultation"
 import { useState } from "react"
 import ShowPriceBlock from "../components/ShowPriceBlock/ShowPriceBlock"
 import { infoServicePages } from "../components/Data/DataServicePrices"
+import ShowTransition from "../components/ShowTransition/ShowTransition"
+
+
+
+
 
 
 export default function ShowAllPrices() {
@@ -29,9 +34,17 @@ export default function ShowAllPrices() {
                     <ShowPriceBlock object={element} />
                 </div>
 
+
+                <span>
+                    &#62;
+
+                </span>
+
             </div>
         ));
     }
+    const name_of_page = `Ціни`
+
 
 
     return (
@@ -39,6 +52,9 @@ export default function ShowAllPrices() {
 
 
             <Navbar />
+            <ShowTransition page={name_of_page}></ShowTransition>
+
+
             <div className="container_for_accordeon">
                 {generateForAccordeon(infoServicePages)}
 
