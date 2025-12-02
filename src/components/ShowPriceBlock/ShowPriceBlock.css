@@ -1,69 +1,48 @@
-.show_prices {
-    width: 200px;
-    height: auto;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin: 80px auto 0 auto;
-    color: white;
+.container_for_accordeon {
+    margin: 100px auto 0 auto;
     width: 100%;
-    text-align: center;
-    padding: 10px;
+    max-width: var(--max-width);
+    padding: 0 20px;
+    box-sizing: border-box;
 
 }
 
-.active_block {
-    background-color: #252629 !important;
-}
-
-.grid_price {
-    width: 70%;
+.accordeon {
+    background-color: #555;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    font-weight: bold;
-    border: 1px solid white;
+    position: relative;
+    transition: 0.3s ease;
 }
 
-.block {
-    width: 100%;
-    height: 60px;
+
+.accordeon:hover {
+    background-color: rgb(56, 56, 56);
+}
+
+.accordeon h3 {
+    margin: 0 40px 0 0;
+    transition: 0.3s ease;
+}
+
+.accordeon span {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
     display: flex;
-    justify-content: space-between;
-
-}
-
-
-.show_info .grid_price {
-    width: 100%;
-    justify-content: center;
     align-items: center;
-    height: calc(100% + 200px);
-}
-
-.show_info .show_prices {
-    margin: 0 !important;
-}
-
-
-.accordeon .showname {
-    height: 60px !important;
-    padding: 10px !important;
-}
-
-
-.accordeon .showprice {
-    height: 60px;
-}
-
-
-
-.accordeon.show .show_info {
-    max-height: 2500px !important;
-}
-
-.accordeon.show h3 {
-    margin-bottom: 12px !important;
+    justify-content: center;
+    transition: 0.3s;
+    transform: rotate(-90deg);
 
 }
 
@@ -71,133 +50,91 @@
     transform: rotate(90deg);
 }
 
-
-.accordeon {
-    background-color: #555;
-    width: 70%;
-    margin: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    color: white;
-    display: flex;
-    justify-content: start;
-    padding: 20px 10px;
-    align-items: start;
-    flex-direction: column;
-    transition: 0.5s;
-    position: relative;
-    border: 1px solid red;
-
-}
-
-.accordeon span {
-    position: absolute;
-    right: 0;
-    width: 20px;
-    height: 20px;
-    margin-right: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    transition: 0.3s ease-in-out;
-}
-
-
-.accordeon:hover {
-    transition: 0.5s;
-    background-color: rgb(56, 56, 56);
-}
-
-.showname,
-.showprice {
-    box-sizing: border-box;
-}
-
-.accordeon h3 {
-    transition: 0.5s;
-    margin-left: 15px;
-}
-
-
 .accordeon .show_info {
     max-height: 0;
     overflow: hidden;
-    box-sizing: border-box;
-    transition: max-height 0.5s ease;
-    text-align: center;
-    align-items: center;
+    transition: max-height 0.45s ease;
+}
+
+.accordeon.show .show_info {
+    max-height: 10000px;
+}
+
+.show_prices {
     width: 100%;
-    border: 4px solid yellow;
-}
-
-.container_for_accordeon {
+    padding: 10px 0;
+    color: white;
+    display: flex;
+    justify-content: center;
     margin: 100px auto 0 auto;
-    width: var(--max-width);
-    border: 1px solid purple;
 
 
 }
+
+.grid_price {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    min-height: 60px;
+    height: auto;
+    border-radius: 12px;
+
+    gap: 10px;
+
+    flex-wrap: nowrap;
+}
+
 
 .showname {
-    width: 78%;
-    background-color: rgb(23, 23, 23);
+    border-radius: 12px;
+    padding: 0 12px;
     height: 100%;
-    border-radius: 15px;
+    flex: 1 1 auto;
+    min-width: 0;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    background-color: #4f4e4e;
 }
 
 .showprice {
+    flex: 0 0 auto;
+    width: 120px;
     display: flex;
-    align-items: center;
-    width: 20%;
-    background-color: rgb(23, 23, 23);
-    height: 100%;
-    border-radius: 15px;
     justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    height: 100%;
+    border-radius: 12px;
+    background-color: #4f4e4e;
 
 }
 
-@media (max-width:1200px) {
-    .container_for_accordeon {
-        width: auto;
-        height: auto;
-    }
 
-    .accordeon {
-        width: calc(100% - 40px);
-        margin: 20px !important;
-
-    }
+.accordeon .show_prices {
+    margin: 0;
 }
 
-@media (max-width:800px) {
 
-    .showname {
-        height: 100%;
-        border: 1px solid purple;
-    }
+.active_block {
+    background-color: #252629 !important;
+}
 
-
-
+@media (max-width: 800px) {
     .block {
-        border: 1px solid white;
-        height: auto !important;
-        min-height: 60px !important;
-        margin-top: 20px;
+        align-items: flex-start;
     }
 
-    .accordeon.show .show_info {
-        max-height: 2000px !important;
-        height: 100% !important;
-    }
-
-    .grid_price {
-        border: 3px solid black;
-        gap: 0;
-
-
+    .showprice {
+        justify-content: center;
+        font-weight: bold;
     }
 }
