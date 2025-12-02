@@ -20,15 +20,13 @@ export default function ShowPrices() {
 
     let selected = ''
     selected = infoServicePages.find(item => item.name === service)
-    const name_of_page = `Послуги / ${service}`
 
 
     return (
 
         <>
-
             <Navbar></Navbar>
-            <ShowTransition page={name_of_page}></ShowTransition>
+            <ShowTransition page={selected.name} object={selected}></ShowTransition>
             <ShowDescriptionServiceBlock object={selected}></ShowDescriptionServiceBlock>
             <ShowPriceBlock object={selected}></ShowPriceBlock>
             <Consultation></Consultation>

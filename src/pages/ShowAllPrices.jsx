@@ -49,8 +49,9 @@ export default function ShowAllPrices() {
     return (
         <>
 
+
             <Navbar />
-            <ShowTransition page={name_of_page}></ShowTransition>
+            <ShowTransition page={name_of_page} object={{}}></ShowTransition>
             <div className="container_for_accordeon">
                 {generateForAccordeon(infoServicePages)}
 

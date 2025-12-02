@@ -9,7 +9,6 @@ export default function ShowPriceBlock({ object }) {
 
     const entries = Object.entries(object).filter(([key]) => key !== "name");
 
-
     return (
 
         < section className="show_prices" >
