@@ -22,6 +22,7 @@
     flex-direction: column;
     gap: 20px;
     font-weight: bold;
+    border: 1px solid white;
 }
 
 .block {
@@ -47,11 +48,9 @@
 
 .accordeon .showname {
     height: 60px !important;
-
     padding: 10px !important;
-
-
 }
+
 
 .accordeon .showprice {
     height: 60px;
@@ -73,7 +72,6 @@
 }
 
 
-
 .accordeon {
     background-color: #555;
     width: 70%;
@@ -88,6 +86,7 @@
     flex-direction: column;
     transition: 0.5s;
     position: relative;
+    border: 1px solid red;
 
 }
 
@@ -100,7 +99,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 30px;
     transition: 0.3s ease-in-out;
 }
 
@@ -121,8 +120,6 @@
 }
 
 
-
-
 .accordeon .show_info {
     max-height: 0;
     overflow: hidden;
@@ -135,6 +132,9 @@
 .container_for_accordeon {
     margin: 100px auto 0 auto;
     width: var(--max-width);
+    border: 1px solid purple;
+
+
 }
 
 .showname {
@@ -147,7 +147,6 @@
     padding: 0 20px;
 
 
-
 }
 
 .showprice {
@@ -158,4 +157,16 @@
     height: 100%;
     border-radius: 15px;
     justify-content: center;
+}
+
+@media (max-width:1200px) {
+    .container_for_accordeon {
+        width: auto;
+    }
+
+    .accordeon {
+        width: calc(100% - 40px);
+        margin: 20px !important;
+
+    }
 }
