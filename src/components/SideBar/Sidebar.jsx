@@ -26,9 +26,9 @@ export default function SideBar({ isOpenSd }) {
                         Послуги
                     </a>
                     <div className={`block_toggle_container ${isOpen ? "open" : ""}`}>
-                        <a href="">Service</a>
-                        <a href="">Service</a>
-                        <a href="">Service</a>
+                        <a href="#/services/service/Терапевтична стоматологія">Терапевтична стоматологія</a>
+                        <a href="#/services/service/Ортодонтія">Ортодонтія</a>
+                        <a href="">Імплантація зубів</a>
                         <a href="">Service</a>
                         <a href="">Service</a>
 
@@ -36,7 +36,7 @@ export default function SideBar({ isOpenSd }) {
 
                     </div>
 
-                    <a href="#">Ціни</a>
+                    <a href="#/prices">Ціни</a>
                     <a
                         href="#"
                         onClick={(e) => {

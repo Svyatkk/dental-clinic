@@ -23,7 +23,7 @@ export default function ShowPriceBlock({ object }) {
                         </div>
 
                         <div className={`showprice ${index % 2 === 0 ? "active_block" : ""}`}>
-                            {price} грн
+                            {price} ₴
 
                         </div>
                     </div >

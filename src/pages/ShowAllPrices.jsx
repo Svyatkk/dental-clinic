@@ -4,6 +4,7 @@ import { useState } from "react"
 import ShowPriceBlock from "../components/ShowPriceBlock/ShowPriceBlock"
 import { infoServicePages } from "../components/Data/DataServicePrices"
 import ShowTransition from "../components/ShowTransition/ShowTransition"
+import ShowDescriptionServiceBlock from "../components/ShowDescriptionServiceBlock/ShowDescriptionServiceBlock"
 
 export default function ShowAllPrices() {
 
@@ -18,6 +19,7 @@ export default function ShowAllPrices() {
 
         }
     }
+
 
     function generateForAccordeon(objects) {
         return objects.map((element, index) => (
@@ -39,10 +41,14 @@ export default function ShowAllPrices() {
             </div>
         ));
     }
+
+
+
     const name_of_page = `Ціни`
 
     return (
         <>
+
             <Navbar />
             <ShowTransition page={name_of_page}></ShowTransition>
             <div className="container_for_accordeon">

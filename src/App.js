@@ -23,6 +23,8 @@ function App() {
 
         <Navbar>
         </Navbar>
+
+
         <Main>
           <MainMenu></MainMenu>
 

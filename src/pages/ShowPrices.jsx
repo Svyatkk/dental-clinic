@@ -8,7 +8,7 @@ import ServicesPage from "./ServicesPage";
 import ShowPriceBlock from "../components/ShowPriceBlock/ShowPriceBlock";
 import { useState } from "react";
 import { infoServicePages } from "../components/Data/DataServicePrices";
-
+import ShowDescriptionServiceBlock from "../components/ShowDescriptionServiceBlock/ShowDescriptionServiceBlock";
 
 export default function ShowPrices() {
 
@@ -26,8 +26,10 @@ export default function ShowPrices() {
     return (
 
         <>
+
             <Navbar></Navbar>
             <ShowTransition page={name_of_page}></ShowTransition>
+            <ShowDescriptionServiceBlock object={selected}></ShowDescriptionServiceBlock>
             <ShowPriceBlock object={selected}></ShowPriceBlock>
             <Consultation></Consultation>
 
