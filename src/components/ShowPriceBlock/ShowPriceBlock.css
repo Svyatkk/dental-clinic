@@ -81,7 +81,14 @@
     padding: 20px 10px;
     align-items: start;
     flex-direction: column;
+    transition: 0.5s;
 
+
+}
+
+.accordeon:hover {
+    transition: 0.5s;
+    background-color: rgb(56, 56, 56);
 }
 
 .showname,
@@ -102,7 +109,6 @@
     text-align: center;
     align-items: center;
     width: 100%;
-
 }
 
 .container_for_accordeon {
