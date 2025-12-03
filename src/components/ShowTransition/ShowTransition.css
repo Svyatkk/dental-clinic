@@ -22,6 +22,7 @@
 .path_page a.active {
     color: #606060;
 
+
 }
 
 .path_page a {
@@ -32,5 +33,11 @@
 
 .path_page a {
     color: white;
+}
 
+
+@media (max-width: 450px) {
+    .showTransition {
+        font-size: 0.9em;
+    }
 }
