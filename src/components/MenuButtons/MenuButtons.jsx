@@ -34,6 +34,7 @@ export default function MenuButtons() {
                         <a href="#/services/service/Імплантація зубів">Імплантація зубів</a>
                         <a href="#/services/service/Лікування каналів зуба">Лікування каналів зуба</a>
                         <a href="#/services/service/Естетична стоматологія">Естетична стоматологія</a>
+                        <a href="#/services/service/Дитяча стоматологія">Дитяча стоматологія</a>
 
                     </div>
                 </div>

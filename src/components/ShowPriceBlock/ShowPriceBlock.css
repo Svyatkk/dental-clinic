@@ -54,10 +54,16 @@
 .accordeon .show_info {
     max-height: 0;
     overflow: hidden;
-
     transition: max-height 0.5s ease;
 }
 
+.accordeon .grid_price h1 {
+    display: none;
+}
+
+.grid_price h1 {
+    padding-bottom: 20px;
+}
 
 .accordeon.show .show_info {
     max-height: 10000px;

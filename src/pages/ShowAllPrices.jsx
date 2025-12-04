@@ -66,7 +66,6 @@ export default function ShowAllPrices() {
     }
 
 
-
     const name_of_page = `Ціни`
 
     return (
