@@ -26,9 +26,6 @@
     padding-top: 0 !important;
 }
 
-.accordeon:hover {
-    background-color: rgb(56, 56, 56);
-}
 
 .accordeon h3 {
     margin: 0 40px 0 0;
@@ -57,7 +54,6 @@
 .accordeon .show_info {
     max-height: 0;
     overflow: hidden;
-
 
     transition: max-height 0.5s ease;
 }

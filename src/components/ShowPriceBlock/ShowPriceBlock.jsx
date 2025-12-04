@@ -15,6 +15,7 @@ export default function ShowPriceBlock({ object }) {
 
             <div className="grid_price">
 
+
                 {entries.map(([serviceName, price], index) => (
                     < div className="block" >
                         <div className={`showname ${index % 2 === 0 ? "active_block" : ""}`}>
