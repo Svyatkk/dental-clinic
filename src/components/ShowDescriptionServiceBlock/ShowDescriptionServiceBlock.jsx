@@ -13,8 +13,6 @@ export default function ShowDescriptionServiceBlock({ object }) {
     return (
         <>
 
-
-
             <section className="desc_service">
                 <h1>{SelectedObject.h1}</h1>
                 <img src={SelectedObject.img}></img>
